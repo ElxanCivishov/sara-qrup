@@ -1,6 +1,6 @@
 > SARA QRUP Application using Reactjs
 
-![This is the Project Thumbnail]("./logo.png)
+![This is the Project Thumbnail](./logo.png)
 
 > Packages Used
 
