@@ -1,11 +1,31 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ErrorPage, Login, Main, NotFound } from "./containers";
+import Test from "./pages/Test";
+
 function App() {
-  return (
-    <h1 className="text-3xl font-bold text-red-500 underline">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
-      expedita soluta maiores facere dolor esse libero labore deleniti sit
-      placeat.
-    </h1>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/errorpage",
+      element: <ErrorPage />,
+    },
+
+    {
+      path: "/",
+      element: <Main />,
+      errorElement: <NotFound />,
+      children: [
+        {
+          path: "/*",
+          element: <Main />,
+        },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
