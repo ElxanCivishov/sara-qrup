@@ -58,7 +58,10 @@ export default {
         cartItem: "#2e3033",
         cartTotal: "#343739",
       },
+      fontFamily: {
+        poppins: ["Poppins", "ui-sans-serif", "system-ui"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

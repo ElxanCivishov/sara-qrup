@@ -25,7 +25,7 @@ import {
   BsTelephoneFill,
 } from "react-icons/bs";
 import { IoFastFood, IoBasket } from "react-icons/io5";
-import { BiChevronRight } from "react-icons/bi";
+import { BiChevronsRight } from "react-icons/bi";
 import { HiCurrencyRupee } from "react-icons/hi2";
 
 export {
@@ -49,6 +49,6 @@ export {
   BsTelephoneFill,
   IoFastFood,
   IoBasket,
-  BiChevronRight,
+  BiChevronsRight,
   HiCurrencyRupee,
 };

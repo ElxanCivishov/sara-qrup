@@ -31,3 +31,19 @@ export const heroTextTop = {
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: 60 },
 };
+
+export const staggerFadeInOut = (i) => {
+  return {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: 50 },
+    transition: { duration: 0.3, delay: i * 0.15 },
+    key: { i },
+  };
+};
+
+export const SlideInFromOutside = {
+  initial: { opacity: 0, x: 20 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: 20 },
+};

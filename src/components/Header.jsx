@@ -13,7 +13,7 @@ import { Us, Ru, Az } from "react-flags-select";
 import { useEffect, useState } from "react";
 import { Avatar } from "../assets";
 
-const Header = () => {
+const Header = ({ setIsCard }) => {
   const [isMenu, setIsMenu] = useState(false);
   const [isLang, setIsLang] = useState(false);
   const [currentUser, setCurrentUser] = useState(true);
@@ -94,7 +94,11 @@ const Header = () => {
           </ul>
         </nav>
         <motion.div className="flex items-center justify-center gap-4 md:gap-8">
-          <motion.div {...buttonClick} className="relative cursor-pointer">
+          <motion.div
+            {...buttonClick}
+            className="relative cursor-pointer"
+            onClick={() => setIsCard(true)}
+          >
             <MdShoppingCart className="text-2xl md:text-3xl text-textColor" />
             <div className="w-4 h-4 md:w-6 md:h-6 rounded-full bg-red-500 flex items-center justify-center -top-2 md:-top-4 -right-1 absolute">
               <p className="text-base text-white font-semibold ">2</p>

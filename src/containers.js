@@ -13,4 +13,7 @@ export { default as Slider } from "./components/Slider";
 export { default as SliderCard } from "./components/SliderCard";
 export { default as FilterSection } from "./components/FilterSection";
 export { default as FilterCard } from "./components/FilterCard";
+export { default as Cart } from "./components/Cart";
+export { default as CartItem } from "./components/CartItem";
+export { default as Footer } from "./components/Footer";
 export { default as Test } from "./pages/Test";

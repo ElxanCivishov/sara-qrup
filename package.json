@@ -16,7 +16,8 @@
     "react-flags-select": "^2.2.3",
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.11.2",
-    "swiper": "^9.3.2"
+    "swiper": "^9.3.2",
+    "tailwind-scrollbar": "^3.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
